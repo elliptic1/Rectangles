@@ -1,0 +1,27 @@
+package com.tbse.rectangles;
+
+import org.andengine.entity.primitive.Line;
+import org.andengine.entity.scene.Scene;
+import org.andengine.opengl.vbo.VertexBufferObjectManager;
+
+public class ShootLine {
+
+	private Scene scene;
+	private Line line;
+
+	public ShootLine(Scene scene, float startX, float startY, float endX,
+			float endY, VertexBufferObjectManager vertexBufferObjectManager) {
+		this.scene = scene;
+		this.line = new Line(startX, startY, endX, endY, vertexBufferObjectManager);
+		scene.attachChild(this.line);
+	}
+
+	public void update(float dx, float dy, float x, float y) {
+		line.setPosition(dx, dy, x, y);
+	}
+
+	public void detachSelf() {
+		scene.detachChild(scene.getLastChild());
+	}
+
+}

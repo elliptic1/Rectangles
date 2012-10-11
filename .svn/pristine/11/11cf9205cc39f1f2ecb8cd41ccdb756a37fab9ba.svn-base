@@ -1,0 +1,132 @@
+package com.tbse.rectangles;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
+
+public class HomeActivity extends Activity {
+	
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+	    super.onConfigurationChanged(newConfig);
+	}
+
+
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.homescreen);
+
+		final SeekBar numDiscsSB = (SeekBar) findViewById(R.id.numDiscsSeekBar);
+		final SeekBar numMoonsSB = (SeekBar) findViewById(R.id.numMoonsSeekBar);
+		final SeekBar numRectanglesSB = (SeekBar) findViewById(R.id.numRectanglesSeekBar);
+		
+		numDiscsSB.setProgress(1);
+		numMoonsSB.setProgress(1);
+		numRectanglesSB.setProgress(1);
+		
+		final TextView numDiscsTV = (TextView) findViewById(R.id.numDiscsValue);
+		final TextView numMoonsTV = (TextView) findViewById(R.id.numMoonsValue);
+		final TextView numRectanglesTV = (TextView) findViewById(R.id.numRectanglesValue);
+
+		numDiscsSB.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress,
+					boolean fromUser) {
+				// TODO Auto-generated method stub
+				numDiscsTV.setText(Integer.toString(progress));
+			}
+		});
+		numMoonsSB.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress,
+					boolean fromUser) {
+				// TODO Auto-generated method stub
+				numMoonsTV.setText(Integer.toString(progress));
+			}
+		});
+		numRectanglesSB
+				.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+					@Override
+					public void onStopTrackingTouch(SeekBar seekBar) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onStartTrackingTouch(SeekBar seekBar) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onProgressChanged(SeekBar seekBar,
+							int progress, boolean fromUser) {
+						// TODO Auto-generated method stub
+						numRectanglesTV.setText(Integer.toString(progress));
+					}
+				});
+
+		Button gobutton = (Button) findViewById(R.id.startbutton);
+
+		gobutton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				try {
+
+					int numDiscs = numDiscsSB.getProgress();
+					int numMoons = numMoonsSB.getProgress();
+					int numRectangles = numRectanglesSB.getProgress();
+
+					Intent i = new Intent(getApplicationContext(),
+							MainGameActivity.class);
+					i.putExtra("com.tbse.rectangles.numdiscs", numDiscs);
+					i.putExtra("com.tbse.rectangles.nummoons", numMoons);
+					i.putExtra("com.tbse.rectangles.numrectangles",
+							numRectangles);
+
+					startActivity(i);
+				} catch (ClassCastException issue6894) {
+				} // ignore  
+
+			}
+		});
+
+	}
+
+}

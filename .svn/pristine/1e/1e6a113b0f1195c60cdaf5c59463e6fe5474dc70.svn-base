@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Rectangles!</string>
+    <string name="app_name">Rectangles!</string>
+    <string name="ButtonText">Start The Show</string>
+    <string name="numDiscsText">Number of Discs</string>
+    <string name="numDiscsValue">1</string>
+    <string name="numMoonsText">Number of Moons</string>
+    <string name="numMoonsValue">1</string>
+    <string name="numRectanglesText">Number of Rectangles!</string>
+    <string name="numRectanglesValue">1</string>
+    <string name="version">version 2.0</string>
+    <string name="Tips">Tilt your ERR phone for gravity and fling the discs with your finger.</string>
+</resources>

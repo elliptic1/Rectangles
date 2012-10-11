@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="lib/andengine.jar" sourcepath="C:/Users/Todd/workspace/andengine/src"/>
+	<classpathentry kind="lib" path="lib/andenginephysicsbox2dextension.jar" sourcepath="C:/Users/tbsmith/workspace/andenginephysicsbox2dextension"/>
+	<classpathentry kind="lib" path="C:/Program Files/Android/android-sdk-windows/platforms/android-15/android.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

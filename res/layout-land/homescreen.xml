@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#659ec7"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/logoBlock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/hello"
+            android:textColor="#000000"
+            android:textSize="24pt"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/versionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/logo"
+            android:paddingRight="10dp"
+            android:text="@string/version"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoBlock"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/numDiscsBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/numDiscsTextRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/numDiscsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numDiscsText"
+                    android:textColor="#000000"
+                    android:width="150dp" />
+
+                <TextView
+                    android:id="@+id/numDiscsValue"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/numDiscsValue"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/numDiscsSeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numDiscsTextRow"
+                android:max="10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/numMoonsBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numDiscsBlock"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/numMoonsTextRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/numMoonsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/numMoonsText"
+                    android:textColor="#000000"
+                    android:width="150dp" />
+
+                <TextView
+                    android:id="@+id/numMoonsValue"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/numMoonsValue"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/numMoonsSeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numMoonsTextRow"
+                android:max="30" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topRow"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/numRectanglesBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numDiscsBlock"
+            >
+
+            <LinearLayout
+                android:id="@+id/numRectanglesTextRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/numDiscsTextRow">
+
+                <TextView
+                    android:id="@+id/numRectanglesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numRectanglesText"
+                    android:textColor="#000000"
+                    android:width="150dp" />
+
+                <TextView
+                    android:id="@+id/numRectanglesValue"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/numRectanglesValue"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/numRectanglesSeekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numRectanglesTextRow"
+                android:max="60" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/startButtonBlock"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numMoonsBlock"
+            android:layout_alignLeft="@id/numMoonsBlock"
+            android:layout_toRightOf="@id/numRectanglesBlock"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/ButtonText" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondRow"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/Tips"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+</RelativeLayout>

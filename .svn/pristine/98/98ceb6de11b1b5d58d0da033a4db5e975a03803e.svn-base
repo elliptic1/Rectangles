@@ -1,0 +1,79 @@
+package com.tbse.rectangles;
+
+import org.andengine.engine.camera.Camera;
+import org.andengine.entity.scene.background.IBackground;
+import org.andengine.opengl.util.GLState;
+import org.andengine.util.color.Color;
+import org.andengine.util.modifier.IModifier;
+
+public class MyBackground implements IBackground {
+
+	@Override
+	public void onDraw(GLState pGLState, Camera pCamera) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onUpdate(float pSecondsElapsed) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void reset() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void registerBackgroundModifier(
+			IModifier<IBackground> pBackgroundModifier) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean unregisterBackgroundModifier(
+			IModifier<IBackground> pBackgroundModifier) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void clearBackgroundModifiers() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean isColorEnabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void setColorEnabled(boolean pColorEnabled) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void setColor(Color pColor) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void setColor(float pRed, float pGreen, float pBlue) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void setColor(float pRed, float pGreen, float pBlue, float pAlpha) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

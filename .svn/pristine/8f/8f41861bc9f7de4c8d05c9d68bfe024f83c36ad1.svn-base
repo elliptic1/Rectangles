@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" android:background='#659ec7'>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/hello"
+        android:textColor="#000000"
+        android:textSize="24pt"
+        android:typeface="serif" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/version"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" android:paddingRight="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/numDiscsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numDiscsText"
+                android:textColor="#000000" android:width="150dp"/>
+
+            <TextView
+                android:id="@+id/numDiscsValue"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/numDiscsValue"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/numDiscsSeekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="10" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/numMoonsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/numMoonsText"
+                android:textColor="#000000" android:width="150dp"/>
+
+            <TextView
+                android:id="@+id/numMoonsValue"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/numMoonsValue"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/numMoonsSeekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="30" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/numRectanglesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numRectanglesText"
+                android:textColor="#000000" android:width="150dp"/>
+
+            <TextView
+                android:id="@+id/numRectanglesValue"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/numRectanglesValue"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/numRectanglesSeekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="60" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/ButtonText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tips"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:gravity="center_vertical|center_horizontal"/>
+
+</LinearLayout>
