@@ -1,5 +1,7 @@
 Rectangles is an open source physics simulation for Android that uses Box2d and AndEngine. It was originally developed by Todd Smith <elliptic1@gmail.com> and was open sourced on github on 10-10-12.
 
+Download it from the Google Play Store: https://play.google.com/store/apps/details?id=com.tbse.andengine
+
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
